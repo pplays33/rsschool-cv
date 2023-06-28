@@ -5,6 +5,7 @@
 
 ## Contact info
 #### email: pplayps98@gmail.com
+#### discord-rs: vaime(@pplays33)
 #### [github](https://github.com/Vaiem)
 ***
 
