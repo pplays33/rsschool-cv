@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <title>cv</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container-header">
+            <div class="flex-container header_titel">
+                <img src="https://avatars.githubusercontent.com/u/136715973?v=4" alt="avatar" class="avatar">
+                <div class="item1 flex-item">i'm Valera </div>
+            </div>
+            <h1 class="h1-about">Frontend dev</h1>
+            <h4 class="h4-about"> i'm  </h4>
+        </div>
+    </header>
+
+
+    <div class="main-contriner">
+        <h1 class="main-title"> >>> my skills</h1>
+        <div class="carts">
+            <div class="cart-item1">
+                <h1 class="item1-1">7/10</h1>
+                <h1 class="item1-2">html</h1>
+            </div>
+            <div class="cart-item1">
+                <h1 class="item1-1">7/10</h1>
+                <h1 class="item1-2">css</h1>
+            </div>
+            <div class="cart-item1">
+                <h1 class="item1-1">3/10</h1>
+                <h1 class="item1-2">js</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-code">
+        <h1 class="h1-code"> >>> code example </h1>
+        <div class="code-example">
+            <pre>
+                <code>
+                    function decode(expr) {
+                        const splitedExpr = expr.split('');
+                        let stash = [];
+                        let result = [];
+                    
+                        function recursion(startIndex, endIndex) {
+                        stash = [];
+                    
+                        if (startIndex === expr.length) return;
+                    
+                        for (let i = startIndex; i &lt; endIndex; i = i + 2) {
+                            if (splitedExpr[i] + splitedExpr[i + 1] === '10') stash.push('.');
+                    
+                            if (splitedExpr[i] + splitedExpr[i + 1] === '11') stash.push('-');
+                    
+                            if (splitedExpr[i] === '*') {
+                            result.push(' ');
+                            return recursion(startIndex + 10, endIndex + 10);
+                            }
+                        }
+                    
+                        for (key in MORSE_TABLE) {
+                            if (key === stash.join('')) {
+                            result.push(MORSE_TABLE[key]);
+                            } 
+                        }
+                        recursion(startIndex + 10, endIndex + 10);
+                        }
+                    
+                        recursion(0, 10);
+                    
+                        return result.join('');
+                    }
+                </code>
+            </pre>
+        </div>
+        <br>
+    </div>
+
+
+    <div class="contact-container">
+        <h1 class="h1-code"> >>> my contact</h1>
+        <ul class="list-contact">
+            <li class="item-contact">discord-rsserver: </li>
+            <li class="item-contact">github: </li>
+        </ul>
+    </div>
+
+
+
+    <div class="container-works">
+        <h1 class="main-title"> >>> My Works</h1>
+        <div class="container-examples-works">
+            <div class="works1 item-work">
+                <h2 class="title-work"> > a mini framework for building web applications using Rust</h2>
+                <h2 class="stack"> > stack:</h2>
+                <div class="stack-container">
+                    <img src="https://img.icons8.com/ios-filled/50/github.png" alt="github" class="icons">
+                    <img src="https://www.rust-lang.org/static/images/rust-logo-blk.svg" alt="rust" class="icons">
+                    <img src="https://img.icons8.com/ios-filled/50/github.png" alt="github" class="icons">
+                   
+                </div>
+            </div>
+            <div class="works2 item-work">
+                <h2 class="title-work"> > Web-application for finding jobs and performers</h2>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
