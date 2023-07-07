@@ -8,11 +8,20 @@ html{
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Caprasimo', cursive;
+    font-family: 'Space Mono', monospace;
     font-weight: 400;
     font-size: 16px;
     background-color: #F8F5E2;
     color: green;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+}
+
+p{
+    font-family: 'Space Mono', monospace;
 }
 
 .header {
@@ -44,13 +53,54 @@ body {
     padding-top: 100px;
     padding-left: 100px;
     text-transform: uppercase;
-    font-family: 'Concert One', cursive;
 }
 
 .h4-about{
     padding-left: 100px;
-    font-family: 'DotGothic16', sans-serif;
 }
+
+
+.nav-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fers-items{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+.item1-nav{
+    min-width: 190px;
+    min-height: 60px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.item3-nav{
+    display: flex;
+    align-items: center;
+    min-width: 57px;
+    min-height: 57px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.item2-nav-container{
+    padding-left: 5px;
+}
+
+.item{
+    padding-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    min-width: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
 
 
 
@@ -64,7 +114,6 @@ body {
 .main-title {
     padding-top: 5px;
     padding-left: 15px;
-    font-family: 'Concert One', cursive;
 }
 
 .carts{
@@ -83,7 +132,6 @@ body {
 .item1-1{
     margin: 0;
     text-transform: uppercase;
-    font-family: 'Concert One', cursive;
 }
 
 
@@ -98,7 +146,6 @@ body {
 .h1-code{
     padding-top: 5px;
     padding-left: 15px;
-    font-family: 'Concert One', cursive;
 }
 .code-example{
     max-width: 1000px;
@@ -131,12 +178,34 @@ body {
 }
 
 .item-work{
-    margin-right: 10px;
+    margin-left: 5px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
     background-color: #fff;
     border-radius: 10px;
+}
+
+.Link-Work{
+    padding-top: 5px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(83, 255, 131, 0.54) 0%, rgba(255, 64, 133, 0.00) 86.29%);
+    border-radius: 5px;
 }
 
 .icons{
     width: 40px;
     height: 40px;
+}
+
+
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fbffa9;
 }
